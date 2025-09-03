@@ -1,0 +1,170 @@
+/* Page Layout */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #1e4c8d; /* dark blue */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  font-size: 1.5rem;
+  display: block; /* ensures centering behavior */
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cards-container {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .cards-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            background-color: var(--card-background-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: 1px solid #ccc;
+        }
+
+        .card h2 {
+            color:white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            text-align: center;
+            background-color:#1e4c8d;
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+        
+        /* New styles to match the image */
+        .about-me .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            
+        }
+
+        .about-me .about-content img {
+            max-width: 150px;
+            flex-shrink: 0;
+            margin-top: 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        
+        .about-me p {
+            margin: 0;
+        }
+        
+        .about-me .text-content {
+            flex-grow: 1;
+          
+        }
+
+        .kenya-info {
+            border-top: 1px solid #ccc;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+        }
+
+        .kenya-info h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .flag-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .flag-container img {
+            width: 80px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .flag-container p {
+            font-style: italic;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+        .kenya-info .text-content {
+            flex-grow: 1;
+        }
+
+        /* Styles for the "Web Dev Resources" card */
+        .resources-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resources-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .resources-card a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .resources-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1e4c8d; /* Navy Blue */
+            color:white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 0.9rem;
+        }
+        
+        #lastModified {
+            margin-top: 0.5rem;
+        }
