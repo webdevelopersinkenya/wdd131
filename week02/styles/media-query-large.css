@@ -1,0 +1,13 @@
+@media screen and (min-width: 500px) {
+  header, footer {
+    background-color: #000000; /* black */
+    color: white;              /* white text */
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal columns */
+    gap: 1rem;
+  }
+}

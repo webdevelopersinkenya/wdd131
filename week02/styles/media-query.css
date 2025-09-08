@@ -1,0 +1,31 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+/* Header, Main, Footer */
+header, main, footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #e3f2fd; /* light blue */
+  color: black; /* default text color */
+}
+
+/* Grid for main */
+main {
+  display: grid;
+  grid-template-columns: 1fr; /* one column */
+  gap: 1rem;
+}
+
+/* Sections */
+section {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Gabriel Aura Mirah, personal homepage, course project">
+  <meta name="author" content="Gabriel Aura Mirah">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS (order matters for mobile-first design) -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu">≡</button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+  <main>
+    <h1><i><b>Home</b></i></h1>
+    <section class="temple-grid">
+      <figure>
+        <img src="images/atlanta_temple_lds.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Atlanta Temple</b></i></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/bern_switzerland_temple_lds.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Switzerland Temple</b></i></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/ghana Accra Temple.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Accra Ghana Temple</b></i></figcaption>
+      </figure>
+      <figure>
+        <img src="images/slctemple.jpg" alt="Salt Lake Temple">
+        <figcaption><i><b>Salt Lake Temple</b></i></figcaption>
+      </figure>
+      <figure>
+        <img src="images/rendering_arequipa_peru_temple.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Peru Temple</b></i></figcaption>
+      </figure>
+      <figure>
+        <img src="images/Ivorycost.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Abidjan Ivory Cost Temple</b></i></figcaption>
+      </figure>
+      <figure>
+        <img src="images/apia_samoa_temple_lds.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Samoa Temple</b></i></figcaption>
+      </figure>
+      <figure>
+        <img src="images/boise_idaho_temple_lds.webp" alt="Salt Lake Temple">
+        <figcaption><i><b>Idaho Temple</b></i></figcaption>
+      </figure>
+      <!-- Add at least 8 more figures -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Gabriel Aura Mirah | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+   <script src="scripts/temples.js" defer></script>
+</body>
+</html>
