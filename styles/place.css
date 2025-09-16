@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #001f3f; /* Navy blue */
+  --secondary-color: #ff0000; /* Red */
+  --accent-color: #ffffff;   /* White */
+  --contrast-bg: #f4f4f4;    /* Light gray for good contrast */
+  --font-stack: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 1rem;    
+  font-family: var(--font-stack);
+  background-color: var(--contrast-bg);
+  line-height: 1.6;
+}
+
+header, footer {
+  background: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hero image */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Sections */
+.data, .weather {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Weather heading pseudo-element for large view */
+.weather h2::after {
+  content: " 😊"; /* Emoticon appears only in wide view */
+  margin-left: 0.5rem;
+  display: none; /* hidden by default */
+}
+
+/* SVG icon shown only on mobile */
+.mobile-only {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+@media (max-width: 699px) {
+  .weather h2::after {
+    display: none; /* hide emoticon on mobile */
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .weather h2::after {
+    display: inline; /* show emoticon only in desktop/wide view */
+  }
+
+  .mobile-only {
+    display: none; /* hide SVG on desktop */
+  }
+}
