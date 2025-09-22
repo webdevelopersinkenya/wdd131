@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+ body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+}
+
+header, footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header {
+  position:relative;
+}
+
+#menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navigation a:hover {
+  background-color: #0066cc;
+}
+.navigation.open {
+  display: flex;
+}
+
+/* Grid for images */
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.temple-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+figure {
+  text-align: center;
+}
